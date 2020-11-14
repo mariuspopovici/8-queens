@@ -27,9 +27,12 @@ const Board = () => {
 
   const get = (x, y) => _board[x][y];
 
+  const random = (min, max) =>
+    Math.floor(min + Math.random() * (max + 1 - min));
+
   const solve = () => {
     const start = _stack.pop();
-    let [row, col] = start ? start : [0, 0];
+    let [row, col] = start ? start : [random(0, 7), 0];
     _board[row][col] = 0;
 
     if (start) row++;
