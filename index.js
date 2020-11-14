@@ -2,6 +2,8 @@ import { Board } from './src/8queens.js';
 
 const drawBoard = board => {
   const chessBoard = document.getElementById('chessBoard');
+  chessBoard.innerHTML = '';
+
   for (let i = 0; i < 8; i++) {
     const row = chessBoard.appendChild(document.createElement('div'));
     for (let j = 0; j < 8; j++) {
@@ -25,6 +27,11 @@ const drawBoard = board => {
   }
 };
 
-const board = Board();
-board.solve();
-drawBoard(board);
+const run = () => {
+  const board = Board();
+  board.solve();
+  drawBoard(board);
+};
+
+run();
+document.getElementById('chessBoard').onclick = run;

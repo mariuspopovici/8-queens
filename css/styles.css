@@ -1,6 +1,7 @@
 .chessBoard {
   display: inline-block;
   border: 2px solid black;
+  cursor: pointer;
 }
 .chessBoard div {
   line-height: 1px;
@@ -10,4 +11,8 @@
   width: 64px;
   height: 64px;
   background-color: white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
