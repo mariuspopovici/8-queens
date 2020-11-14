@@ -9,11 +9,11 @@ const Board = () => {
     const isRowSafe = _board[row].every(element => element === 0);
     if (!isRowSafe) return false;
 
-    /* Check upper diagonal on left side */
+    // check upper diagonal left
     for (let i = row, j = col; i >= 0 && j >= 0; i--, j--)
       if (_board[i][j]) return false;
 
-    /* Check lower diagonal on left side */
+    // lower diagonal left side
     for (let i = row, j = col; j >= 0 && i < _board.length; i++, j--)
       if (_board[i][j]) return false;
 
