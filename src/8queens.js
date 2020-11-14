@@ -38,6 +38,7 @@ const Board = () => {
       return solve();
     }
 
+    // place queens in each column where it's safe
     for (let colIdx = col; colIdx < _board.length; colIdx++) {
       let safe = false;
       for (let rowIdx = row; rowIdx < _board.length; rowIdx++) {
