@@ -1,6 +1,6 @@
 .chessBoard {
   display: inline-block;
-  border: 2px solid lightGray;
+  border: 2px solid black;
 }
 .chessBoard div {
   line-height: 1px;
@@ -9,5 +9,5 @@
   display: inline-block;
   width: 64px;
   height: 64px;
-  background-color: snow;
+  background-color: white;
 }
