@@ -1,0 +1,13 @@
+.chessBoard {
+  display: inline-block;
+  border: 2px solid lightGray;
+}
+.chessBoard div {
+  line-height: 1px;
+}
+.chessBoard span {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background-color: snow;
+}
