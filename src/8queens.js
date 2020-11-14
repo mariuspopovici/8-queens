@@ -43,7 +43,6 @@ const Board = () => {
       let safe = false;
       for (let rowIdx = row; rowIdx < _board.length; rowIdx++) {
         safe = _isSafe(rowIdx, colIdx);
-        if (safe) console.log([rowIdx, colIdx], safe);
         if (safe) {
           _stack.push([rowIdx, colIdx]); // add this position to placements stack
           _board[rowIdx][colIdx] = 1; // mark this position as safe
